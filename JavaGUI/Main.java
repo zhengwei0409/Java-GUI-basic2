@@ -28,16 +28,17 @@ public class Main {
         label.setBorder(border); // create border
         label.setVerticalAlignment(JLabel.CENTER); // set vertical position of text & image within label
         label.setHorizontalAlignment(JLabel.CENTER); // set horizontal position of text & image within label
-        label.setBounds(50, 50, 720, 720); // set x,y position within frame as well as dimensions
+        //label.setBounds(50, 50, 720, 720); // set x,y position within frame as well as dimensions
 
 
         JFrame frame = new JFrame(); 
         frame.setTitle("GTA 6"); 
-        frame.setSize(820,820); 
+        //frame.setSize(820,820); 
 
         // remember to add label before set visible
         frame.add(label);
-        frame.setLayout(null);
+        //frame.setLayout(null);
+        frame.pack();
         frame.setVisible(true); 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     }
